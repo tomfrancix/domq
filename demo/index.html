@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>domq demo</title>
+    <title>@thomasseanfahey/domq demo</title>
     <style>
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 16px; }
       .card { border: 1px solid #ccc; padding: 12px; margin: 12px 0; border-radius: 8px; }
@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>
-    <h1>domq demo</h1>
+    <h1>@thomasseanfahey/domq demo</h1>
     <p>This page uses an import map to load <code>domq</code> directly from <code>./src</code> (no bundler).</p>
 
     <div class="card" data-card="a">
@@ -41,7 +41,7 @@
     </script>
 
     <script type="module">
-      import { dq } from "domq";
+      import { dq } from "@thomasseanfahey/domq";
 
       const out = document.querySelector("#out");
       const start = document.querySelector('[data-kind="tag"]');
