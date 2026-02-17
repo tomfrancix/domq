@@ -1,4 +1,4 @@
-# domq
+# @thomasseanfahey/domq
 
 Query DOM relationships, not selectors.
 
