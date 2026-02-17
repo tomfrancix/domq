@@ -1,6 +1,6 @@
 {
   "name": "@thomasseanfahey/domq",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Query DOM relationships, not selectors. Composable traversal + predicates with deterministic semantics and lazy evaluation.",
   "type": "module",
   "exports": {
