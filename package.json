@@ -1,58 +1,24 @@
 {
-  "name": "@thomasseanfahey/domq",
-  "version": "0.1.2",
+  "name": "domq",
+  "version": "0.1.0",
   "description": "Query DOM relationships, not selectors. Composable traversal + predicates with deterministic semantics and lazy evaluation.",
   "type": "module",
-  "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./src/index.js"
-    },
-    "./shadow": {
-      "types": "./dist/shadow.d.ts",
-      "default": "./src/shadow.js"
-    },
-    "./extra": {
-      "types": "./dist/extra.d.ts",
-      "default": "./src/extra.js"
-    }
+    ".": "./src/index.js",
+    "./shadow": "./src/shadow.js",
+    "./extra": "./src/extra.js"
   },
-  "files": [
-    "src",
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
   "sideEffects": false,
   "engines": {
     "node": ">=18"
   },
-  "keywords": [
-    "dom",
-    "dom-traversal",
-    "dom-query",
-    "browser",
-    "browser-extension",
-    "scraping",
-    "testing",
-    "shadow-dom",
-    "predicate",
-    "query"
-  ],
   "scripts": {
     "test": "node --test",
-    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true });\"",
-    "build:types": "npm run clean && npx -y tsc -p tsconfig.json",
-    "prepack": "npm run build:types",
-    "prepublishOnly": "npm test && npm run build:types",
-    "pack:check": "npm pack --dry-run"
+    "build:types": "npx -y tsc -p tsconfig.json"
   },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "happy-dom": "^15.10.2"
   },
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+  "license": "MIT"
 }
